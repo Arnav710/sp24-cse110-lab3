@@ -68,6 +68,70 @@
 
     <hr/>
 
+    <h4>Form Submission</h4>
+
+    <form>
+        <fieldset>
+          <legend>What day(s) of the week work for you?</legend>         
+            <input type="checkbox" id = "1" name = "availability"/>
+            <label for = "1">Monday</label><br />
+
+            <input type="checkbox" id = "2" name = "availability"/>
+            <label for = "2">Tuesday</label><br />
+
+            <input type="checkbox" id = "3" name = "availability"/>
+            <label for = "3">Wednesday</label><br />
+        </fieldset><br />
+
+        <fieldset>
+            <legend>What is the level of education?</legend>         
+            <input type="radio" id = "1" name = "education"/>
+            <label for = "1">Undergraduate</label><br />
+
+            <input type="radio" id = "2" name = "education"/>
+            <label for = "2">Masters</label><br />
+
+            <input type="radio" id = "3" name = "education"/>
+            <label for = "3">PhD</label><br />
+        </fieldset><br />
+
+        <fieldset>
+            <legend>When can you start working?</legend>         
+            <input type="date" id="start" name="work-start" min="2024-01-01" max="2025-01-01" />
+        </fieldset><br />
+
+        <legend>What are you studying in college?</legend>         
+        <input type="text" id="name" name="name" size="75" /> <br/> <br />
+
+
+        <label for="story">Describe your academic interests here:</label> <br/>
+        <textarea id="story" name="story" rows="5" cols="33">
+        </textarea><br/> <br/>
+
+        <label for="ice-cream-choice">Fun Question: What ice cream flavor do you like?</label>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate"></option>
+            <option value="Coconut"></option>
+            <option value="Mint"></option>
+            <option value="Strawberry"></option>
+            <option value="Vanilla"></option>
+        </datalist> <br/> <br/>
+
+        <label for="pet-select">Fun Question: What is your favorite pet?:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+        </select><br><br>
+
+        <button type="button">Submit</button>
+
+    </form>   
+
+    <hr>
     <h3>Some miscellaneous content</h3>
     <details>
         <summary>What is this?</summary>
