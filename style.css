@@ -1,0 +1,105 @@
+/* style.css */
+
+:root {
+    --main-color: rgb(0, 0, 139)
+  }
+
+.main-heading{
+    /*Fallback to red if the CSS variable --main-color is not defined*/
+    color: var(--main-color, red);
+    margin: auto;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.attendees{
+    background-color: lightblue;
+    margin-top: 2cm;
+    margin-right: 20px;
+    margin: 0.5cm 0 0 5mm;
+
+    padding-top: 0.5em;
+    padding-left: 1rem;
+    padding: 0.5em 0 1vh 1rem;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10;
+}
+
+.attend-people{
+    display: inline-block;
+
+}
+
+.action-items > li{
+    display: inline;
+    margin-right: 25px;
+}
+
+.image{
+    height: 100px;
+    max-height: 200px;
+    max-width: 300px;
+}
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #f34079 40%, #fc894d);
+    color: white;
+}
+
+.box:hover {
+    background: pink;
+}
+
+.box:active{
+    box-shadow: 5px 5px 5px black;
+}
+
+#one{
+    position: static;
+}
+  
+#two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+
+.main-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#container {
+    display: grid;
+    margin-top: 20px;
+
+    grid: repeat(2, 60px) / auto-flow 80px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+}
+
+#container > div {
+    background-color: #8ca0ff;
+    width: 50px;
+    height: 50px;
+}
+
+#grid {
+    display: grid;
+    height: 100px;
+    grid-template-rows: 50px 20px 30 30px 1fr;
+    grid-template-columns: 20px 50px 20px 1fr;
+}
