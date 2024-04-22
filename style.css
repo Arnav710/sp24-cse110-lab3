@@ -34,7 +34,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    border-radius: 10;
+    border-radius: 10px;
 
     font-family: 'Jacquard 24';
 }
@@ -118,7 +118,7 @@ h2 {
 #grid {
     display: grid;
     height: 100px;
-    grid-template-rows: 50px 20px 30 30px 1fr;
+    grid-template-rows: 50px 20px 30px 30px 1fr;
     grid-template-columns: 20px 50px 20px 1fr;
 }
 
