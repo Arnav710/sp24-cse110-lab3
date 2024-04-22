@@ -129,3 +129,25 @@ a[href]{
 p, li{
     font-size: 15px;
 }
+
+.box p {
+    color: yellow;
+}
+
+h1 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+h3+ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+h1.main-heading{
+    font-style: italic;
+}
