@@ -6,10 +6,16 @@
     </title>
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+          color: gray;
+        }
+      </style>
   </head>
   <body>
 
-    <p>Navigation:</p>
+    <p style="color: hsl(178, 38%, 34%)">Navigation:</p>
     <nav>
         <ol>
           <li><a href="#">CSE 110</a></li>
@@ -21,18 +27,18 @@
     <hr/>
 
     <header>
-        <h1>Meeting Minutes - Kickoff</h1>
+        <h1 class="main-heading">Meeting Minutes - Kickoff</h1>
         <time datetime="2024-01-01">January 1</time> 
-        <h2>Attendees</h2>
-        <p>Person 1, Person 2, Person 3, Person 4, Person 5, Person 6, Person 7</p>
+        <h2 class="attendees">Attendees</h2>
+        <p class="attend-people">Person 1, Person 2, Person 3, Person 4, Person 5, Person 6, Person 7</p>
     </header>
 
     <hr/>
 
 
-    <main>
+    <main class="main-body">
         <section>
-            <h2>Agenda</h2>
+            <h2 style="color: color(display-p3 1 0.5 0 / .5)">Agenda</h2>
             This <span>section</span> talks about the goals and objectives for this meeting!
 
             <br/>
@@ -45,7 +51,7 @@
         </section>
 
         <section>
-            <h2>Updates from the past</h2>
+            <h2 style="color: #933535">Updates from the past</h2>
 
             <ul>
                 <li>Gift packages have been sent out</li>
@@ -57,7 +63,7 @@
         <section>
             <div>
                 <h2>Action Items</h2>  
-                <ul>
+                <ul class="action-items">
                     <li>Come up with a project idea</li>
                     <li>Create a figma design</li>
                     <li>Setup <b>Github</b> actions</li>
@@ -68,7 +74,7 @@
 
     <hr/>
 
-    <h4>Form Submission</h4>
+    <h4 style="color: color-mix(in lch, plum, pink)">Form Submission</h4>
 
     <form>
         <fieldset>
@@ -138,7 +144,7 @@
         Just some random multimedia files, enjoy listening to the music and watching the video!
     </details>
     <br>
-    <img src="media/img.png" alt="Google image" width="200">
+    <img class="image" src="media/img.png" alt="Google image" width="200">
     <br><br>
     <audio controls src="media/audio.mp3"></audio>
     <br><br>
@@ -146,6 +152,30 @@
         <source src="media/video.mp4" type="video/mp4" />
     </video>
     
+    <hr>
+
+    <h3>Some Shapes</h3>
+
+    <p>Hover over them to change the color and click for active shadow:</p>
+
+    <div class="box" id="one">Shape 1</div>
+    <div class="box" id="two">Shape 2</div>
+
+    <p>Here is a sample grid</p>
+    <div id="grid">
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+    </div>
+      
+
     <footer>
         <small>
           Copyright © 2024 Arnav Modi. All Rights Reserved.
