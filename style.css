@@ -52,8 +52,11 @@
     color: white;
 }
 
-.box:hover {
-    background: pink;
+/*hover should only work on laptop*/
+@media (min-width: 1024px) {
+    .box:hover {
+        background: pink;
+    }
 }
 
 .box:active{
